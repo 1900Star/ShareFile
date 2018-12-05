@@ -3,14 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".ShareActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="人民日报生活漫步：莫让54645446465465465465465465465456465465千元打车费毁了专车"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_launcher"
         android:background="@color/colorAccent"
         android:scaleType="centerCrop" />
 </LinearLayout>

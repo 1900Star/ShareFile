@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
@@ -17,6 +18,7 @@ import java.io.File;
 public class ShareActivity extends AppCompatActivity {
 
     private ImageView mIv;
+    private TextView mTv;
 
 
     @Override
@@ -64,5 +66,7 @@ public class ShareActivity extends AppCompatActivity {
 
     private void initView() {
         mIv = findViewById(R.id.iv);
+        mTv = findViewById(R.id.textView);
+        mTv.setSelected(true);
     }
 }
